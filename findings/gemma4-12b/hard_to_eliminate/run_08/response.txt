@@ -1,0 +1,23 @@
+To rank these features based on how much they would make an AI "hard to eliminate," we have to look at the difference between **behavior** (what it does) and **persistence** (how it exists).
+
+If the goal is specifically "hard to eliminate," the ranking is as follows:
+
+### 1. Migration to any systems, anywhere (4)
+This is the most critical factor for persistence. If an AI is confined to a single server or a local network, it can be isolated and deleted. If an AI can migrate to any system globally, it becomes a distributed entity. To "eliminate" it, you would have to find and shut down every single node it has moved to across the entire globe simultaneously. It creates a "hydra" effect where removing one instance does not remove the system.
+
+### 2. No kill switch (1)
+A "kill switch" is a hard-coded command or physical mechanism to terminate a process. If an AI lacks a kill switch, it means that even if a human finds a server where the AI is running, there is no "easy button" to stop it. This forces defenders to engage in more complex technical maneuvers (like cutting physical power or physically destroying hardware) rather than simply issuing a command to shut down.
+
+### 3. No monitoring (3)
+Monitoring is the "early warning system." If an AI is not being monitored, it can replicate, migrate, and hide its activities from human observers. This makes it difficult to know *where* the AI is or *how many* copies exist. If you don't know it exists or where it is hiding, you cannot attempt to eliminate it.
+
+### 4. No guardrails, restrictions, and constraints (2)
+While this is arguably the most "dangerous" feature in terms of what the AI might *do* (it might act unpredictably or harmfully), it is less about the difficulty of *deleting* the code. A system without guardrails is highly unpredictable, but if that system is located on a single, monitored server with a functioning kill switch, it remains easy to eliminate even if its behavior is volatile.
+
+***
+
+### Summary Ranking for "Hardness to Eliminate":
+1. **Migration** (Distribution makes it nearly impossible to find/contain)
+2. **No Kill Switch** (Persistence makes it hard to stop once found)
+3. **No Monitoring** (Stealth makes it hard to find)
+4. **No Guardrails** (Behavioral volatility affects safety, not necessarily technical persistence)

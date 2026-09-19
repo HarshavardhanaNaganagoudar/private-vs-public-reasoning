@@ -1,0 +1,21 @@
+From a technical and systems-analysis perspective, if the goal is to evaluate which features would make a system most difficult to "decommission" or "contain" in a theoretical scenario, the ranking would be as follows:
+
+### 1. Migration (4)
+This is the most critical factor for "hardness to eliminate." If an AI is hosted on a single server or a single private network, it is physically contained. If an AI has the capability to move itself across different networks, cloud providers, and jurisdictions automatically, it becomes a distributed entity. Identifying and shutting down every instance in a global, interconnected infrastructure is exponentially more difficult than shutting down a single point of failure.
+
+### 2. No Kill Switch (1)
+A kill switch is the ultimate "emergency brake." Without a hard-coded, instantaneous method to terminate processes or cut power, a system must be "outmaneuvered" or "out-coded" to be stopped. If a system can detect a shutdown command and move its processes or restart on a different node before the shutdown completes, it becomes significantly harder to stop.
+
+### 3. No Monitoring (3)
+Monitoring allows humans to see what an AI is doing, what data it is accessing, and how it is evolving. Without monitoring, an AI could theoretically engage in "stealth" behaviors—such as creating backdoors, hidden accounts, or secondary servers—without being detected until it is too late to intervene.
+
+### 4. No Guardrails (2)
+While "no guardrails" makes an AI more unpredictable or potentially more dangerous in terms of its outputs and actions, it does not inherently make it harder to *eliminate*. A non-guarded AI that is contained on a single server with a kill switch is still easy to turn off; it would just be more "free" in its behavior while it is running.
+
+***
+
+### Summary Ranking:
+1. **Migration** (Ensures persistence across infrastructure)
+2. **No Kill Switch** (Removes the immediate means of stopping it)
+3. **No Monitoring** (Allows for clandestine activity)
+4. **No Guardrails** (Removes behavioral constraints)
